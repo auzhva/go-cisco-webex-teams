@@ -27,6 +27,7 @@ type MessageCreateRequest struct {
 	ToPersonEmail string       `json:"toPersonEmail,omitempty"` // Person email (for type=direct).
 	Text          string       `json:"text,omitempty"`          // Message in plain text format.
 	Markdown      string       `json:"markdown,omitempty"`      // Message in markdown format.
+	HTML          string       `json:"html,omitempty"`          // Message in HTML format.
 	Files         []string     `json:"files,omitempty"`         // File URL array.
 	Attachments   []Attachment `json:"attachments,omitempty"`   //Attachment Array
 }
